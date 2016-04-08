@@ -6,7 +6,7 @@ generate_dynamic_reconfigure_options(cfg/ImageView.cfg)
 
 catkin_package(CATKIN_DEPENDS dynamic_reconfigure)
 find_package(Boost REQUIRED COMPONENTS signals thread)
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 3.1 REQUIRED)
 
 include_directories(SYSTEM ${Boost_INCLUDE_DIRS}
                            ${catkin_INCLUDE_DIRS}
